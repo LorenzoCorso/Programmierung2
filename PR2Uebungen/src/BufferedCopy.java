@@ -18,12 +18,17 @@ public class BufferedCopy {
 			while ((zeile = bf.readLine()) != null) {			
 				eineEingabeDatei.write(zeile);
 			}
+			
+			bf.close();
+			eineEingabeDatei.close();
 
 		} catch (IOException eineAusnahme) {
 			System.out.println("Fehlermeldung: " + eineAusnahme);
 
 		}
-
+		
+		
 	}
+
 
 }
