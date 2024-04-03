@@ -24,11 +24,6 @@ public class BufferedCopy {
 
 		} catch (IOException eineAusnahme) {
 			System.out.println("Fehlermeldung: " + eineAusnahme);
-
-		}
-		
-		
+		}	
 	}
-
-
 }
