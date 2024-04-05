@@ -5,7 +5,7 @@ public class Class {
 	private String y;
 	private static int z;
 
-	public Class(int x, String y, int z) {
+	public Class( int x, String y, int z) {
 		x = z;
 		this.y = y;
 		Class.z = z + x;
