@@ -35,7 +35,7 @@ public class QuickCalc {
 	}
 
 	public QuickCalc minus(QuickCalc q) {
-		return plus(q.wert);
+		return minus(q.wert);
 	}
 
 	private void druckeWert() {
