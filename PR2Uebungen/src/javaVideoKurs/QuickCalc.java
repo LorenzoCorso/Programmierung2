@@ -30,13 +30,28 @@ public class QuickCalc {
 		return this;
 	}
 
+	public QuickCalc plus(QuickCalc q) {
+		return plus(q.wert);
+	}
+
+	public QuickCalc minus(QuickCalc q) {
+		return plus(q.wert);
+	}
+
 	private void druckeWert() {
 		System.out.println("WERT: " + wert);
 	}
 
 	public static void main(String[] args) {
 
-		new QuickCalc(10).plus(3).minus(2).invertiere().plus(1).minus(7).invertiere().plus(13);
+		System.out.println("QuickCalc 1: ");
+		QuickCalc q1 = new QuickCalc(-9).plus(3).minus(1).invertiere().plus(3);
+		System.out.println();
+		System.out.println("QuickCalc 2: ");
+		QuickCalc q2 = new QuickCalc(5).invertiere().plus(11).minus(5);
+		System.out.println();
+		System.out.println("QuickCalc 3: ");
+		new QuickCalc(5).plus(q1).minus(2).minus(q2).plus(q2.invertiere());
 
 	}
 
