@@ -46,10 +46,14 @@ public class QuickCalc {
 
 		System.out.println("QuickCalc 1: ");
 		QuickCalc q1 = new QuickCalc(-9).plus(3).minus(1).invertiere().plus(3);
-		System.out.println();
+		
+		System.out.println("------------------------------------------------");
+		
 		System.out.println("QuickCalc 2: ");
 		QuickCalc q2 = new QuickCalc(5).invertiere().plus(11).minus(5);
-		System.out.println();
+		
+		System.out.println("------------------------------------------------");
+		
 		System.out.println("QuickCalc 3: ");
 		new QuickCalc(5).plus(q1).minus(2).minus(q2).plus(q2.invertiere());
 
