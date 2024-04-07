@@ -3,12 +3,7 @@ package javaVideoKurs;
 public class KundeAufgabe3Uebungsblock3 {
 
 	private static int idCounter = 1;
-	private final int id;
-
-	{
-		id = idCounter;
-		idCounter = idCounter + 1;
-	}
+	private final int id = idCounter++;
 
 	public int getId() {
 		return id;
