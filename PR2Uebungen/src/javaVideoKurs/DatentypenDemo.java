@@ -1,5 +1,7 @@
 package javaVideoKurs;
 
+import java.awt.Color;
+
 public class DatentypenDemo {
 
 	public static void main(String[] args) {
@@ -20,6 +22,13 @@ public class DatentypenDemo {
 		char c = 'A';
 
 		boolean bool = false;
+		
+		
+//		komplexe Datentype
+		
+		Auto a = new Auto(0, "Audi");  // Konstruktor - Aufruf
+		String st = "Hallo";  // kein Konstruktor/Klasse(Objekt) notwendig 
+		Color color = new Color (255,0,0);   //  RBG Farben => hier ROT auf voll
 
 	}
 
