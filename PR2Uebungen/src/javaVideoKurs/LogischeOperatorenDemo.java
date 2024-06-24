@@ -27,6 +27,8 @@ public class LogischeOperatorenDemo {
 		Auto bmw = new Auto(200, "BMW");
 		Auto audi = new Auto(120, "Audi");
 
+		
+		if (audi != null) {
 		if (Auto.erstellteAutos == 2) {
 			if (audi.getLeistung() < 100) {
 				;
@@ -35,14 +37,29 @@ public class LogischeOperatorenDemo {
 				audi.tunen();
 			}
 		}
+		}
 
 //	einfacher
 
-		if (Auto.erstellteAutos == 2 & audi.getLeistung() < 100 | audi.getLeistung() < bmw.getLeistung())
+		if (audi != null && Auto.erstellteAutos == 2 & audi.getLeistung() < 100 | audi.getLeistung() < bmw.getLeistung())
 
 		{
 			audi.tunen();
 		}
 
+//		Short Circuit Evaluation / Kurzschlussauswertung =>  && und || => werden nur solange ausgewertet solange auch kein Ergebnis vorliegt
+
+		int i = 10;
+		int j = 15;
+		if (i == 10 || j == 15) {  // d.h bei einem | wertet er beide Variablen aus und schaut ob erst die i = true ist und dananch wird noch, 
+			//  					  auch wenn überflüssig j = 15 ausgewertet. Bei || bricht er sofort ab nachdem i = true ist weil dann der Ausdruck auch schon true ist da 
+			//				 	    => bei oder nur ein true notwendig ist !!
+			
+			//  Das gleiche gilt auch für && sobald einer der beiden Varibalen den Wert false liefert zbsp i = false dann wird j nicht mehr überprüft da bei & beide Variablen true liefern müssen
+			// ....
+			return;
+		}
+
 	}
+
 }
