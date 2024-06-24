@@ -1,5 +1,7 @@
 package javaVideoKurs;
 
+import klassen.Auto;
+
 public class VergleichsOperatorenDemo {
 
 	public static void main(String[] args) {

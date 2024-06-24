@@ -6,6 +6,7 @@ public class CastingDemo {
 		
 		// Implizieter Cast 
 		
+		
 		long l = 50; 
 		double d = 2; // Wieso sind beide jetzt gecasted ? => Ganze Zahlen werden normalerweise immer als Integer interpretiert = Casting in anderen Datentyp welchen 
 					  // festgelegt hatten
