@@ -5,8 +5,6 @@ public class Class {
 	public static void main(String[] args) {
 		
 		
-		
-		
 		int i = 9;
 		int k = 2;
 		boolean b = (i < 10 & modCheck(k) || modCheck(++i));
