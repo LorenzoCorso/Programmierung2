@@ -26,7 +26,7 @@ public class DatentypenDemo {
 		
 //		komplexe Datentype
 		
-		Auto a = new Auto(0, "Audi");  // Konstruktor - Aufruf
+		
 		String st = "Hallo";  // kein Konstruktor/Klasse(Objekt) notwendig 
 		Color color = new Color (255,0,0);   //  RBG Farben => hier ROT auf voll
 
